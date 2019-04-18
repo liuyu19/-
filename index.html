@@ -1,0 +1,77 @@
+<!DOCTYPE html>     
+<html>     
+<head>
+	<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: hotpink;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+</style>
+<meta charset=" utf-8">        
+<style type="text/css">    
+div{   
+  width:100px;   
+  height:100px;   
+  background:hotpink;   
+  position:relative;   
+         
+  animation:ant-1 5s infinite alternate,ant-2 2s infinite alternate;   
+  -webkit-animation:ant-1 5s infinite alternate,ant-2 2s infinite alternate;   
+  -moz-animation:ant-1 5s infinite alternate,ant-2 2s infinite alternate;   
+  -o-animation:ant-1 5s infinite alternate,ant-2 2s infinite alternate;   
+     
+  animation-timing-function:ease-in,ease-out; 
+  -webkit-animation-timing-function:ease-in,ease-out; 
+  -moz-animation-timing-function:ease-in,ease-out; 
+  -o-animation-timing-function:ease-in,ease-out; 
+}  
+@keyframes ant-1{   
+  0% {left:0px;}   
+  100% {left:200px;}   
+}   
+@-webkit-keyframes ant-1{   
+  0% {left:0px;}   
+  100% {left:200px;}   
+}   
+@-moz-keyframes ant-1{   
+  0% {left:0px;}   
+  100% {left:200px;}   
+}   
+@-o-keyframes ant-1{   
+  0% {left:0px;}   
+  100% {left:200px;}   
+}   
+
+
+@keyframes ant-2{   
+  0% {top:0px;}   
+  100% {top:200px;}   
+}   
+@-webkit-keyframes ant-2{   
+  0% {top:0px;}   
+  100% {top:200px;}   
+}   
+@-moz-keyframes ant-2{   
+  0% {top:0px;}   
+  100% {top:200px;}   
+}   
+@-o-keyframes ant-2{   
+  0% {top:0px;}   
+  100% {top:200px;}   
+}      
+</style>   
+</head>   
+<body>   
+<div></div>   
+</body>   
+</html>
